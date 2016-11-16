@@ -1,4 +1,3 @@
-
 *::after {
     margin: 0;
     padding: 0;
@@ -30,7 +29,7 @@ p {
 }
 
 h1 {
-    color: #FFF
+    color: #fff
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -130,3 +129,171 @@ img {
     border-width: 8px 0px 8px 16px;
     border-color: transparent #FFF ;
 }
+
+.learn_more_button {
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.learn_more_button:hover {
+    text-decoration: underline;
+    color: #FF0;
+}
+
+.learn_more_button:visited {
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 1% auto;
+    background: #FFF;
+    border-radius: 5px;
+    width: 75%;
+    height: 85%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup .popup_left {
+    width: 49%;
+}
+
+.popup .popup_left .description {
+    height: 65%;
+    overflow-y: auto;
+}
+
+.popup .popup_left p {
+    font: normal 0.9em "Helvetica Neue", sans-serif;
+    margin: 0px 0px 8px 0px;
+    padding: 0px 0px 0px 0px;
+    color:#000;
+    overflow-x: auto;
+    text-align: justify;
+}
+
+.popup .popup_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 49%;
+}
+
+.box_picture {
+    position: relative;
+    width: 100%;
+    height: 55%;
+}
+
+.box_picture .pic_project {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 100%; 
+    z-index: 1;
+}
+
+.box_picture .left_arrow {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    width: 10%;
+    height: auto;
+    margin-right: : 0px;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.box_picture .right_arrow {
+    position: absolute;
+    right: 2%;
+    top: 40%;
+    width: 10%;
+    height: auto;
+    margin-right: : 0px;
+    z-index: 3;
+    opacity: 0.4;
+}
+
+.box_picture .right_arrow:hover {
+    opacity: 0.8;
+}
+
+.box_picture .left_arrow:hover {
+    opacity: 0.8;
+}
+.popup .popup_right .bibliography {
+    background-color: #fff;
+    height: 45%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.popup .popup_right p {
+    font: normal 0.9em "Helvetica Neue", sans-serif;
+    margin: 8px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color:#000;
+    overflow-x: auto;
+    text-align: left;
+
+}
+
+.popup h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #000;
+}
+
+.popup em {
+    font: normal 12px "Helvetica Neue", sans-serif;
+    color: #555;
+
+}.popup img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.popup .close {
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    transition: all 200ms;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #888;
+}
+.popup .close:hover {
+    color: #000;
+}
+
+
